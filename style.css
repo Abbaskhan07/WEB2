@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header, footer, aside, main, .card, .gallery-item, .p-card {
+  border: 1px solid #000;
+}
+
+
+/*часть 1---------------------------------------------------------- */
+
+/* задание 0 */
+.task0 {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+}
+.task0 nav {
+  display: flex;
+  gap: 10px;                      
+}
+
+/* задание 1*/
+.task1 {
+  display: flex;
+  align-items: stretch;         
+  gap: 10px;                   
+}
+.task1 .card {
+  flex: 1;                       
+  display: flex;
+  flex-direction: column;       
+}
+.task1 .card:hover {
+  transform: translateY(-2px);   
+}
+.task1 .card p {
+  flex-grow: 1;                   
+}
+
+
+/* часть 2--------------------------------------------*/
+
+/* 2 задание */
+.task2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap: 5px;
+}
+.task2 header { grid-area: header; }
+.task2 aside  { grid-area: sidebar; }
+.task2 main   { grid-area: main; }
+.task2 footer { grid-area: footer; }
+
+/* 3 задание */
+.task3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 5px;                              
+}
+.task3 .gallery-item {
+  position: relative;
+}
+.task3 img {
+  width: 100%;
+  display: block;
+}
+.task3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;                            
+}
+.task3 .gallery-item:hover .overlay {
+  opacity: 1;                             
+}
+
+
+/* 3 часть--------------------------------------------------------------------------------------*/
+
+/* задание 4 */
+.task4 {
+  display: flex;
+  flex-direction: column;
+}
+/* Flexbox в шапке */
+.task4 .p-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task4 .p-header nav {
+  display: flex;
+  gap: 10px;
+}
+/* CSS Grid для основной секции */
+.task4 .p-main-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+/* Flexbox внутри карточки проекта */
+.task4 .p-card {
+  display: flex;
+  flex-direction: column;
+}
