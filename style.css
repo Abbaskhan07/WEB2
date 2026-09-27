@@ -60,6 +60,60 @@ header, footer, aside, main, .card, .gallery-item, .p-card {
 .task2 main   { grid-area: main; }
 .task2 footer { grid-area: footer; }
 
+/* Task 2 Grid Items Styling */
+.task2 header {
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ddd;
+}
+
+.task2 .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+.task2 .sidebar-block {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.task2 .planet-search {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.task2 .planet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task2 .planet-list a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.task2 main {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task2 footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-top: 2px solid #ddd;
+}
+
 /* 3 задание */
 .task3 {
   display: grid;
@@ -118,4 +172,47 @@ header, footer, aside, main, .card, .gallery-item, .p-card {
 .task4 .p-card {
   display: flex;
   flex-direction: column;
+}
+
+/* Sidebar Layout & Styling */
+.p-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+
+
+
+.sidebar-block {
+  border: 1px solid #ccc;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-block h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.tech-list, .sidebar-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-links a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.sidebar-links a:hover {
+  text-decoration: underline;
 }
