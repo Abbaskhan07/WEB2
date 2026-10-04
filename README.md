@@ -1,8 +1,8 @@
 # Assignment #3: Responsive Web Design
 
-* Name: Аббасхан Ибраимов
-* Group: SE-23XX
-* University: Astana IT University
+* Name: Abbaskhan Ibraimov
+* Group: IT-2501
+
 
 ---
 
