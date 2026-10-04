@@ -44,3 +44,9 @@ In this assignment, I learned how to build responsive web pages using standard C
   ![Part 3 Desktop](![alt text](image-5.png))
 * Mobile Screenshot:  
   ![Part 3 Mobile](![alt text](image-6.png))
+
+##  Live Demo Links
+
+* [Part 1: Media Queries](https://abbaskhan07.github.io/WEB2/part1.html)
+* [Part 2: Bootstrap Grid](https://abbaskhan07.github.io/WEB2/part2.html)
+* [Part 3: Responsive Portfolio](https://abbaskhan07.github.io/WEB2/part3.html)
