@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 1</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: sans-serif; padding: 15px; }
+
+    
+    h1 { font-size: 18px; text-align: center; }
+    .txt { font-size: 13px; text-align: center; margin-bottom: 20px; }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 26px; }
+      .txt { font-size: 17px; }
+    }
+    @media (min-width: 1024px) {
+      h1 { font-size: 34px; }
+      .txt { font-size: 20px; }
+    }
+
+    
+    .box { display: flex; flex-wrap: wrap; gap: 10px; }
+    .b {
+      background: #3498db; color: #fff; padding: 25px;
+      text-align: center; border-radius: 6px; flex: 1 1 100%;
+    }
+
+    @media (min-width: 768px) { .b { flex: 1 1 calc(50% - 10px); } }
+    @media (min-width: 1024px) { .b { flex: 1 1 calc(33.3% - 10px); } }
+  </style>
+</head>
+<body>
+  <h1>Task 0: Responsive Text</h1>
+  <p class="txt">Размер этого текста зависит от экрана.</p>
+
+  <div class="box">
+    <div class="b">Блок 1</div>
+    <div class="b">Блок 2</div>
+    <div class="b">Блок 3</div>
+  </div>
+</body>
+</html>

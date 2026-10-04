@@ -1,71 +1,46 @@
-Assignment 2: Flexbox & Grid Systems
+# Assignment #3: Responsive Web Design
 
-Student: Abbaskhan Ibraimov
-Group ; IT-2501
+* Name: Аббасхан Ибраимов
+* Group: SE-23XX
+* University: Astana IT University
 
-Overview
+---
 
-This report describes the implementation of responsive and structured web layouts built with CSS Flexbox and CSS Grid System.
+## Work Process Summary
 
-Task Breakdown
+In this assignment, I learned how to build responsive web pages using standard CSS Media Queries and the Bootstrap 5 Grid system.
 
-Part 1: Flexbox Layouts
+1. Part 1 (Pure CSS): Created a webpage with responsive typography (h1, .txt) and a 3-box layout (.b) using standard CSS media queries (@media). The layout switches between 1 column (mobile), 2 columns (tablet), and 3 columns (desktop) without any framework.
+2. Part 2 (Bootstrap Grid & Navbar): Built a layout using Bootstrap 5. Configured a responsive 12-column grid (col-12, col-md-6, col-lg-4) and an interactive navigation bar (navbar) that collapses into a hamburger menu on small viewports.
+3. Part 3 (Combined Portfolio): Combined custom media queries with Bootstrap components to create a complete responsive personal portfolio page featuring project cards, a sidebar with personal info, and custom styling rules.
 
-Task 0 Navigation Bar:
+---
 
-Implemented a navigation bar using display flex.
+## Tasks and Screenshots
 
-Applied justify-content space-between to position the logo and navigation links on opposite sides of the header.
-
-Vertically aligned all elements using align-items center.
-
-Task 1 Card Row:
-
-Built a row of 3 cards with consistent spacing using gap 15px.
-
-Applied align-items stretch to ensure uniform height across all cards.
-
-Configured a vertical flex layout inside each card using flex-direction column.
-
-Applied flex-grow 1 to the description paragraph to push the action button to the bottom of the card.
-
-Added a hover effect for interactive feedback.
-
-Part 2: Grid System
-
-Task 2 Page Layout with Grid Areas:
-
-Created a structural page layout using display grid and grid-template-areas.
-
-Divided the layout into 4 distinct regions: header, sidebar, main, and footer.
-
-Set up column proportions using 1fr 3fr.
-
-Task 3 Image Gallery:
-
-Constructed a 3x3 gallery grid using grid-template-columns repeat(3, 1fr).
-
-Implemented a text overlay that appears on hover using opacity 1.
-
-Part 3: Combining Flexbox & Grid
-
-Task 4 Portfolio Page:
-
-Combined Flexbox and Grid techniques within a single layout:
-Grid manages the outer layout structure (main content and sidebar split into 3fr 1fr).
-Flexbox handles inner layout components: header navigation and content inside project cards.
-
-Conclusion
-
-Key concepts covered during this assignment include:
-
-Differences between 1D Flexbox and 2D Grid layout systems.
-
-Distributing free space using fractional units (fr) and flex-grow.
-
-Setting up named layout areas using grid-template-areas.
+### Part 1. Media Queries (Task 0 and Task 1)
+* Description: Responsive typography and a 3-box layout using pure CSS media queries.
+* Desktop Screenshot:  
+  ![Part 1 Desktop](![alt text](image.png))
+* Tablet Screenshot:  
+  ![Part 1 Tablet](![alt text](image-1.png))
+* Mobile Screenshot:  
+  ![Part 1 Mobile](![alt text](image-2.png))
 
 
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
+
+### Part 2. Bootstrap Grid System (Task 2 and Task 3)
+* Description: Bootstrap 12-column responsive layout and collapsible navbar.
+* Desktop Screenshot:  
+  ![Part 2 Desktop](![alt text](image-3.png))
+* Mobile Screenshot:  
+  ![Part 2 Mobile](![alt text](image-4.png))
+
+
+
+### Part 3. Combined Project (Task 4)
+* Description: Full responsive portfolio page combining Bootstrap and custom media queries.
+* Desktop Screenshot:  
+  ![Part 3 Desktop](![alt text](image-5.png))
+* Mobile Screenshot:  
+  ![Part 3 Mobile](![alt text](image-6.png))
