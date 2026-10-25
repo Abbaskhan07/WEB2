@@ -1,4 +1,4 @@
-// Task 1: userProfile object
+// Task 1
 const userProfile = {
   name: "Аббасхан",
   birthYear: 2007,
@@ -6,7 +6,7 @@ const userProfile = {
   hobbies: ["coding", "football", "music"]
 };
 
-// Task 2: arithmetic calculations
+// Task 2
 const profileInfo = document.getElementById("profileInfo");
 
 function showProfile() {
@@ -18,7 +18,7 @@ function showProfile() {
   console.log(userProfile.name, age, months, hobbiesCount);
 }
 
-// Task 3-4: form and event listener
+// Task 3-4
 document.getElementById("profileForm").addEventListener("submit", (e) => {
   e.preventDefault();
   userProfile.name = document.getElementById("username").value;
@@ -26,7 +26,7 @@ document.getElementById("profileForm").addEventListener("submit", (e) => {
   showProfile();
 });
 
-// Task 5: add / remove list items
+// Task 5
 const list = document.getElementById("list");
 const itemInput = document.getElementById("itemInput");
 
