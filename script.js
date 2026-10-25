@@ -6,53 +6,41 @@ const userProfile = {
   hobbies: ["coding", "football", "music"]
 };
 
-// Task 2
 const profileInfo = document.getElementById("profileInfo");
+const list = document.getElementById("list");
 
+// Task 2
 function showProfile() {
   const age = new Date().getFullYear() - userProfile.birthYear;
   const months = age * 12;
-  const hobbiesCount = userProfile.hobbies.length;
+  const hobbiesCount = list.getElementsByTagName("li").length;
 
   profileInfo.textContent = `${userProfile.name}: ${age} years (${months} months), hobbies: ${hobbiesCount}`;
   console.log(userProfile.name, age, months, hobbiesCount);
 }
 
 // Task 3-4
-document.getElementById("profileForm").addEventListener("submit", (e) => {
-  e.preventDefault();
+document.getElementById("saveBtn").addEventListener("click", () => {
   userProfile.name = document.getElementById("username").value;
   userProfile.birthYear = Number(document.getElementById("birthYear").value);
+  profileInfo.style.color = "green";
   showProfile();
 });
 
 // Task 5
-const list = document.getElementById("list");
-const itemInput = document.getElementById("itemInput");
-
-function renderList() {
-  list.innerHTML = "";
-  userProfile.hobbies.forEach((h) => {
-    const li = document.createElement("li");
-    li.textContent = h;
-    list.appendChild(li);
-  });
-}
-
 document.getElementById("addBtn").addEventListener("click", () => {
-  const value = itemInput.value.trim();
-  if (!value) return;
-  userProfile.hobbies.push(value);
-  itemInput.value = "";
-  renderList();
+  const input = document.getElementById("itemInput");
+  if (input.value === "") return;
+  list.innerHTML += `<li>${input.value}</li>`;
+  input.value = "";
   showProfile();
 });
 
 document.getElementById("removeBtn").addEventListener("click", () => {
-  userProfile.hobbies.pop();
-  renderList();
+  if (list.lastElementChild) {
+    list.lastElementChild.remove();
+  }
   showProfile();
 });
 
 showProfile();
-renderList();

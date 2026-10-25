@@ -10,11 +10,9 @@
   <main>
     <h1>User Profile</h1>
 
-    <form id="profileForm">
-      <input type="text" id="username" placeholder="Username" required>
-      <input type="number" id="birthYear" placeholder="Birth Year" required>
-      <button type="submit">Create / Update Profile</button>
-    </form>
+    <input type="text" id="username" placeholder="Username">
+    <input type="number" id="birthYear" placeholder="Birth Year">
+    <button id="saveBtn">Create / Update Profile</button>
 
     <div id="profileInfo"></div>
 
@@ -22,7 +20,11 @@
     <input type="text" id="itemInput" placeholder="New item">
     <button id="addBtn">Add Item</button>
     <button id="removeBtn">Remove Item</button>
-    <ul id="list"></ul>
+    <ul id="list">
+      <li>coding</li>
+      <li>football</li>
+      <li>music</li>
+    </ul>
   </main>
   <script src="script.js"></script>
 </body>
