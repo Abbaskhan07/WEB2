@@ -3,8 +3,6 @@
 **Name:** Ibraimov Abbaskhan
 **Group:** IT-2501
 
-**GitHub Pages:** https://abbaskhan07.github.io/WEB2/
-
 ## Part 1: Profile Object, Data Types & Arithmetic
 
 ### Task 1. The Personal Info Object
