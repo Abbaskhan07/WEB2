@@ -55,4 +55,4 @@ document.getElementById("removeBtn").addEventListener("click", () => {
 });
 
 showProfile();
-renderList(); 
+renderList();
