@@ -1,7 +1,7 @@
 // Task 1: userProfile object
 const userProfile = {
-  name: "Aidar",
-  birthYear: 2005,
+  name: "Аббасхан",
+  birthYear: 2007,
   isDeveloper: true,
   hobbies: ["coding", "football", "music"]
 };
@@ -55,4 +55,4 @@ document.getElementById("removeBtn").addEventListener("click", () => {
 });
 
 showProfile();
-renderList();
+renderList(); 
